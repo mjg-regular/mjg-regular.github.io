@@ -38,6 +38,10 @@ h1 {
 	color: white;
 }
 
+#redtext {
+	color: red;
+}
+
 #cat-image {
 	max-width: 100%;
 	height: auto;
