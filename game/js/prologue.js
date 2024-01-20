@@ -213,6 +213,36 @@ monogatari.script ({
 
 	],
 
+	'r1.1.1.2':[
+		'show character e relieved',
+		'e Then you shouldn\'t be nervous at all right now.',
+
+		'show character e happy',
+		'e I think you should learn to be more assertive.',
+
+		'show character e challenge',
+		'e Don\'t shrink in the face of strangers, challenge their world views instead!',
+
+		'show character e relieved2',
+		'e And speaking of challening world views...',
+		'jump flyeroffer'
+	],
+
+	'r1.1.1.3':[
+		'show character e happy3',
+		'e It\'s fine, it\'s fine!',
+		'show character e unsure',
+		'e that\'s only true if you\'re under 18!',
+		'show character e happy',
+		'e So don\'t be scared of the suspicious onee-chan, okay?',
+		'jump flyeroffer'
+	],
+
+
+
+
+
+
 	'r1.1.1.1':[
 		'show character e excited2',
 		'e Oh, I see we have the same hobbies.',
@@ -1338,6 +1368,10 @@ monogatari.script ({
 		
 		'show character e happy2',
 		'e Right, I shouldn\'t waste the time of someone as important as you.',
+		'jump flyeroffer'
+	],
+
+	'flyeroffer':[
 		
 		'e Here, please read this!',
 		
