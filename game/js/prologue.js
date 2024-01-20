@@ -1929,7 +1929,7 @@ monogatari.script ({
 		'e I\'ve heard that /mjg/ is the best place to find volunteers for an unconventional mahjong tournament.',
 		
 		'show character e unsure',
-		'e —Unconventional circumstances around tournament itself, but the rules are completely regular.',
+		'e —Unconventional circumstances around the tournament itself, but the rules are completely regular.',
 		
 		'show character e happy2',
 		'e No tricks, no gimmicks.',
