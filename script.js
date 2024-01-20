@@ -1,4 +1,4 @@
-var targetDate = new Date("Jan 20, 2024 19:00:00 UTC").getTime();
+var targetDate = new Date("Feb 2, 2024 19:00:00 UTC").getTime();
 
 var updateCountdown = function() {
 	var now = new Date().getTime();
@@ -18,7 +18,7 @@ var updateCountdown = function() {
 		var hour = ("0" + date.getUTCHours()).slice(-2);
 		var minute = ("0" + date.getUTCMinutes()).slice(-2);
 		var second = ("0" + date.getUTCSeconds()).slice(-2);
-		document.getElementById("on-time").innerHTML = year + ":" + month + ":" + day + "/" + hour + ":" + minute + ":" + second;
+		document.getElementById("on-time").innerHTML = year + ":" + month + ":" + day + "  " + hour + ":" + minute + ":" + second;
 
 		return;
 	}
@@ -31,7 +31,7 @@ var updateCountdown = function() {
 	var minute = ("0" + date.getUTCMinutes()).slice(-2);
 	var second = ("0" + date.getUTCSeconds()).slice(-2);
 
-	document.getElementById("on-time").innerHTML = year + ":" + month + ":" + day + "/" + hour + ":" + minute + ":" + second;
+	document.getElementById("on-time").innerHTML = year + ":" + month + ":" + day + "  " + hour + ":" + minute + ":" + second;
 };
 
 var interval = setInterval(updateCountdown, 1000);

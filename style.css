@@ -16,6 +16,9 @@ h1 {
 	margin-bottom: 20px;
     text-align: left;
 }
+h2 {
+	margin-bottom: 0;
+}
 
 #countdown-box {
 	text-align: left;
@@ -55,3 +58,7 @@ h1 {
 	font-weight: 400;
 	font-style: normal;
 }
+
+a:link, a:visited {
+	color: #ffffff;
+	}
