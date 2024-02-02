@@ -864,7 +864,7 @@ monogatari.script ({
         'e So good luck out there!',
 
         'show character e relieved',
-        'e I\'m... may be rooting for you?',
+        'e I... may be rooting for you?',
 
         'show character e unsure',
         'e I\'ll root for you, sure~',
