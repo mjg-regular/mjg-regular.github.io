@@ -592,7 +592,7 @@ monogatari.script ({
         'jump cr1'
     ],
 
-    'c8':[
+    'c9':[
         'show character e shocked',
         'e ...',
 
