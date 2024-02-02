@@ -17,21 +17,27 @@ monogatari.action ('message').messages ({
 			<p><a href='assets/images/flyer.png' target='_blank'>flyer.png</a></p>
 		`
 	},
+	'Flyerr':{
+		title: 'Flyer',
+		subtitle: 'Please take one',
+		body:`
+			<p><a href='assets/images/flyer_.png' target='_blank'>flyer.png</a></p>
+		`
+	},
 	'Application':{
 		title: 'Regular Mahjong Tournament 3 Application Form',
 		subtitle: 'Register Here!',
 		body:`
 			<p><a href='https://forms.gle/REYLixmsuTdTPaDC9' target='_blank'>Google Form</a></p>
 		`
-	}
-});
-
-// Define the notifications used in the game
-monogatari.action ('notification').notifications ({
-	'Welcome': {
-		title: 'Welcome',
-		body: 'I am in love with the McDonald\'s girl, She has the smile of innocence oh so tender and warm, I am in love with the McDonald\'s girl, She is an angel in a polyester uniform',
-		icon: ''
+	},
+	'Riichi':{
+		title: 'Riichi Book 1',
+		subtitle: 'Improve your mahjong skills here!',
+		body:`
+			<p><a href='https://dainachiba.github.io/RiichiBooks/' target='_blank'>Download Online</a></p>
+			<p><a href='https://repo.riichi.moe/books/rb1.html' target='_blank'>Read Online</a></p>
+		`
 	}
 });
 
@@ -170,7 +176,11 @@ monogatari.assets ('gallery', {
 
 // Define the music used in the game.
 monogatari.assets ('music', {
-	'mysterious': '悪役令嬢のワルツ.mp3'
+	'mysterious': '悪役令嬢のワルツ.mp3',
+	'cute': 'kawaii_piano.mp3',
+	'witch': 'Lethargic Witch.mp3',
+	'simple': 'simple_001_piano.mp3',
+	'america':'america.mp3'
 });
 
 // Define the voice files used in the game.
@@ -196,7 +206,8 @@ monogatari.assets ('images', {
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
 	'city': 'city.png',
-	'black': 'black.png'
+	'black': 'black.png',
+	'vending': 'vending.png'
 });
 
 
@@ -244,7 +255,7 @@ monogatari.characters ({
 monogatari.script ({
 	// The game starts here.
 	'Start': [
-		'jump prologue'
+		'jump ch1'
 	],
 
 	'Fin':[
