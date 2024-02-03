@@ -62,3 +62,8 @@ h2 {
 a:link, a:visited {
 	color: #ffffff;
 	}
+
+hr {
+	border-top: .5px white;
+  	width: 50%;
+	}
