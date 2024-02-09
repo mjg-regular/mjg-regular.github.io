@@ -260,7 +260,7 @@ monogatari.script ({
 
         'show character e avoid_eye2',
 
-        'e I didn\'t expect that...',
+        'e <small>I didn\'t expect that...</small>',
 
         'show character e unsure with headShake',
 
@@ -276,7 +276,7 @@ monogatari.script ({
 
         'show character e happy',
 
-        'e So that means you\'re now proceeding to the qualifiers.',
+        'e So that means you\'re now proceeding to the quarterfinals.',
 
         'show character e happy3',
 
