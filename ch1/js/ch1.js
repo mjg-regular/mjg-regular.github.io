@@ -37,7 +37,15 @@ monogatari.script ({
         'show character e happy3',
         'e It\'s free, so don\'t be shy at all.',
 
-        'show message Flyer',
+        {
+			'Choice':{
+				'dotfdfddot':{
+					'Text': '...',
+					'Do': 'show character e shocked'
+				}
+			}
+		},
+		'e Ohh, continue!',
 
         'show character e relieved',
         'e ...',
@@ -135,6 +143,8 @@ monogatari.script ({
 		}
 
     ],
+
+    // sdsd
 
     'b2':[
         'show character e shocked with shakeX',
