@@ -1,4 +1,4 @@
-var targetDate = new Date("Feb 11, 2024 23:00:00 UTC").getTime();
+var targetDate = new Date("Feb 17, 2024 19:00:00 UTC").getTime();
 
 var updateCountdown = function() {
     var now = new Date(Date.now()).getTime();
