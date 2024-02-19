@@ -1,72 +1,286 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>regular tourney 3</title>
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-	</style>
+    <title>Regular Tourney 3</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body >
-	<h1 class="vt323-regular">Regular Tourney 3</h1>
-	<span class="vt323-regular">>3rd Regular Mahjong Tournament<br><br></span>
-	<p> </p>
-	<a href="https://www.youtube.com/watch?v=ZArhx0Zkzc0" class="vt323-regular">Trailer</a><br>
-	<h2 class="vt323-regular"><a href="game/index.html">Prologue</a></h2>
-	<h2 class="vt323-regular"><a href="ch1/index.html">Chapter 1</a></h2>
-	<h2 class="vt323-regular"><a href="ch2/index.html">Chapter 2</a></h2>
-	<hr>
-	<p><center>
-		<h1 class="vt323-regular" style="margin-top: 0;">SEMIFINALS FEBRUARY 17</h1>
-		current date and time: <br>
-		<iframe src="https://free.timeanddate.com/clock/i98icl2z/n1440/tlye/fn2/fs32/fcfff/tct/pct/bas2/bacfff/tt0/tw0/tm1/th1/ta1" frameborder="0" width="481" height="51" allowtransparency="true"></iframe>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="Sacred Prayer - 8bit.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <div id="musicModal" class="modal">
+        <div class="modal-content">
+            <p>Would you like to play background music?</p>
+            <button id="playMusic">Yes</button>
+            <button id="denyMusic">No</button>
+        </div>
+    </div>
 
-		<h2><a href="https://docs.google.com/spreadsheets/d/12DV4gdytUM8iaQB-5VLWYVKTIrBxnVpun2ZyLv2_zE4/edit?usp=sharing">Official Tourney Spreadsheet</a></h2>
-		<small>Check your schedules here, at the Semi/Finals Tab</small><br><br>
-		<hr>
-		<h2><a href="https://youtube.com/playlist?list=PLsNQErkXDPrznhgnLc87t8plRQ7C1tWiQ&si=nIUEnLNBMN9hdN_n">Youtube Playlist</a></h2>
-		<small>(VODs, news, etc...)</small>
-		<h2><a href="https://riichi.moe/">Ranking Site</a></h2>
-		<p>
-			<ul style="text-align: left;">
-					<li>Each stage has 3 games (regular south rounds, regular rules)</li>
-					<li>Top 2 of each table goes to the next stage</li>
-					<li>Same regular rules</li>
-					<li>IMPORTANT: No tricks, no gimmicks</li>
-			</ul>
-		</p>
-	</center></p>
-	<div id="countdown-box">
-		<div id="countdown">
-			<span>Project=RegularTourney</span><br> 
-			<span style="color: red;">Execution Place=180446</span><br>
-			<span style="color: red;">On Place=180446</span><br>
-			<span id="execution-time">Semifinals Start=2024:2:17  19:00:00</span><br>
-			<span id="on-time-label">On Time=</span><span id="on-time"></span>
-		</div>
-	</div>
-	<script src="script.js"></script>
-	<hr>
-	
-	
+<div class="container">
 
-	<br><br>
-	
+    
+    <div class="credits">
+        <small>/mjg/ presents...</small> <br>
+        <h1 class="vt323-regular">Regular Tourney 3</h1>
+        The Third Regular Mahjong Tournament
+    </div>
 
-	<footer>
-		<small>
-			<p class="vt323-regular">
-				mjg-tourney-admin@proton.me<br>
-				mjg-rt-ass@proton.me<br>	
-				<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRaGit8I1Gk1dCAn7G5neOf2bQVf_uO7_49_WlmaQ_Q63m4L1cyfuKykVTX3ZJazA4IssuJ6Gaan8Cc/pubhtml">Registrants</a>
-			</p>
-		</small>
-	  </footer> 
+
+    <div style="margin: 100vh 0;">
+        <h1 class="vt323-regular" style="color: red;">BAD END</h1>
+    </div>
+
+    <div class="credits">
+        <img src="emotes/emi happy.png" width="150px"><br>
+        Thank you to everyone who participated in the ritual. <br><br>
+        <a href="https://www.youtube.com/watch?v=9Lj9E4LF6co" style="text-decoration: underline;">Click this for the Ending Scene.</a><br><br>
+        Click your name to get your certificate
+    </div>
+
+
+
+    <div class="credits">
+        <h2>Grand Champion</h2>
+        <img src="emotes/nadeshiko-977.png" width="150" alt="">
+        <p><a href="certs/Certificate of True Victory.png" target="_blank">Qin_Feng</a></p>
+        <small>Winner of the 3rd Regular Tourney</small>
+    </div>
+    <div class="credits">
+        <h2>Finalists</h2>
+        <img src="emotes/toujoukurone-888.png" width="150" alt="">
+        <p><a href="certs/CEOofAutism.png" target="_blank">CEOofAutism</a><br><small>1st Runner Up</small></p>
+        
+        <br><br>
+        <img src="emotes/nikaidoumiki-995.png" width="150" alt="">
+        <p><a href="certs/生意気な猫.png" target="_blank">生意気な猫</a><br><small>2nd Runner Up</small></p>
+
+        <br><br>
+        <img src="emotes/keikumusume-2.png" width="150" alt="">
+        <p><a href="certs/Juphie.png" target="_blank">Juphie</a><br><small>3rd Runner Up</small></p>
+    </div>
+    <div class="credits">
+        <h2>Qualifiers</h2>
+        <div class="row">
+            <div class="column">
+                <p><a href="certs/Qualifiers/Obskiur.png" target="_blank">Obskiur</a></p>
+                <p><a href="certs/Qualifiers/Kirk.png" target="_blank">Kirk</a></p>
+                <p><a href="certs/Qualifiers/dorksport.png" target="_blank">dorksport</a></p>
+                <p><a href="certs/Qualifiers/Kingdomfreak.png" target="_blank">Kingdomfreak</a></p>
+                <p><a href="certs/Qualifiers/Lurker.png" target="_blank">Lurker</a></p>
+                <p><a href="certs/Qualifiers/Plein.png" target="_blank">Plein</a></p>
+                <p><a href="certs/Qualifiers/SakiMadeMePlay.png" target="_blank">SakiMadeMePlay</a></p>
+                <p><a href="certs/Qualifiers/Phalls.png" target="_blank">Phalls</a></p>
+                <p><a href="certs/Qualifiers/GG_to_all.png" target="_blank">GG_to_all</a></p>
+                <p><a href="certs/Qualifiers/Allurein.png" target="_blank">Allurein</a></p>
+                <p><a href="certs/Qualifiers/tumultuous.png" target="_blank">tumultuous</a></p>
+                <p><a href="certs/Qualifiers/Gorona.png" target="_blank">Gorona</a></p>
+                <p><a href="certs/Qualifiers/Haagenti.png" target="_blank">Haagenti</a></p>
+                <p><a href="certs/Qualifiers/kurokai.png" target="_blank">kurokai</a></p>
+            </div>
+            <div class="column">
+                <p><a href="certs/Qualifiers/szme.png" target="_blank">szme</a></p>
+                <p><a href="certs/Qualifiers/Kress.png" target="_blank">Kress</a></p>
+                <p><a href="certs/Qualifiers/Laasti.png" target="_blank">Laasti</a></p>
+                <p><a href="certs/Qualifiers/Fenou.png" target="_blank">Fenou</a></p>
+                <p><a href="certs/Qualifiers/darkboss.png" target="_blank">darkboss</a></p>
+                <p><a href="certs/Qualifiers/superreh.png" target="_blank">superreh</a></p>
+                <p><a href="certs/Qualifiers/Maria33.png" target="_blank">Maria33</a></p>
+                <p><a href="certs/Qualifiers/amegumo.png" target="_blank">amegumo</a></p>
+                <p><a href="certs/Qualifiers/Betty.png" target="_blank">Betty</a></p>
+                <p><a href="certs/Qualifiers/Teach.png" target="_blank">Teach</a></p>
+                <p><a href="certs/Qualifiers/BURAKINAITO.png" target="_blank">BURAKINAITO</a></p>
+                <p><a href="certs/Qualifiers/killkoba.png" target="_blank">killkoba</a></p>
+                <p><a href="certs/Qualifiers/Pints.png" target="_blank">Pints</a></p>
+                <p><a href="certs/Qualifiers/bob1444.png" target="_blank">bob1444</a></p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="credits">
+        <h1>Participants</h1>
+        <div class="row">
+            <div class="participant-column">
+                <p><a href="certs/participants/Fire.png" target="_blank">Fire</a></p>
+                <p><a href="certs/participants/Stafy.png" target="_blank">Stafy</a></p>
+                <p><a href="certs/participants/Minoriko.png" target="_blank">Minoriko</a></p>
+                <p><a href="certs/participants/aestival.png" target="_blank">aestival</a></p>
+                <p><a href="certs/participants/mako.png" target="_blank">mako</a></p>
+                <p><a href="certs/participants/fidgetycube.png" target="_blank">fidgetycube</a></p>
+                <p><a href="certs/participants/Bodoque.png" target="_blank">Bodoque</a></p>
+                <p><a href="certs/participants/Atoru.png" target="_blank">Atoru</a></p>
+                <p><a href="certs/participants/dkm.png" target="_blank">dkm</a></p>
+                <p><a href="certs/participants/Meido.png" target="_blank">Meido</a></p>
+                <p><a href="certs/participants/XSA.png" target="_blank">XSA</a></p>
+                <p><a href="certs/participants/FakeEebbie.png" target="_blank">FakeEebbie</a></p>
+                <p><a href="certs/participants/AkaNashi.png" target="_blank">AkaNashi</a></p>
+                <p><a href="certs/participants/クマリア様.png" target="_blank">クマリア様</a></p>
+                <p><a href="certs/participants/seamus2008.png" target="_blank">seamus2008</a></p>
+                <p><a href="certs/participants/LordofBees.png" target="_blank">LordofBees</a></p>
+                <p><a href="certs/participants/RisingBob.png" target="_blank">RisingBob</a></p>
+                <p><a href="certs/participants/artbuddy.png" target="_blank">artbuddy</a></p>
+                <!-- rest of participants... -->
+            </div>
+            <div class="participant-column">
+                <p><a href="certs/participants/solarpletex.png" target="_blank">solarpletex</a></p>
+                <p><a href="certs/participants/HarryLegs.png" target="_blank">HarryLegs</a></p>
+                <p><a href="certs/participants/ワハハ.png" target="_blank">ワハハ</a></p>
+                <p><a href="certs/participants/MayoGirl.png" target="_blank">MayoGirl</a></p>
+                <p><a href="certs/participants/TyrantDean.png" target="_blank">TyrantDean</a></p>
+                <p><a href="certs/participants/Qawlsl.png" target="_blank">Qawlsl</a></p>
+                <p><a href="certs/participants/rumi!.png" target="_blank">rumi!</a></p>
+                <p><a href="certs/participants/forsenInsane.png" target="_blank">forsenInsane</a></p>
+                <p><a href="certs/participants/Echo13.png" target="_blank">Echo13</a></p>
+                <p><a href="certs/participants/casey8me.png" target="_blank">casey8me</a></p>
+                <p><a href="certs/participants/Watapon.png" target="_blank">Watapon</a></p>
+                <p><a href="certs/participants/scrungo.png" target="_blank">scrungo</a></p>
+                <p><a href="certs/participants/nyagger.png" target="_blank">nyagger</a></p>
+                <p><a href="certs/participants/johyy.png" target="_blank">johyy</a></p>
+                <p><a href="certs/participants/Cyren1345.png" target="_blank">Cyren1345</a></p>
+                <p><a href="certs/participants/vilegash.png" target="_blank">vilegash</a></p>
+                <p><a href="certs/participants/orangepeel.png" target="_blank">orangepeel</a></p>
+                <p><a href="certs/participants/SuliDerDuli.png" target="_blank">SuliDerDuli</a></p>
+                <!-- rest of participants... -->
+            </div>
+            <div class="participant-column">
+                <p><a href="certs/participants/Sylthix.png" target="_blank">Sylthix</a></p>
+                <p><a href="certs/participants/nyaagers.png" target="_blank">nyaagers</a></p>
+                <p><a href="certs/participants/Durante.png" target="_blank">Durante</a></p>
+                <p><a href="certs/participants/Muv_Luv.png" target="_blank">Muv_Luv</a></p>
+                <p><a href="certs/participants/Mendleson.png" target="_blank">Mendleson</a></p>
+                <p><a href="certs/participants/Waifu.png" target="_blank">Waifu</a></p>
+                <p><a href="certs/participants/Reggro.png" target="_blank">Reggro</a></p>
+                <p><a href="certs/participants/BoeKing.png" target="_blank">BoeKing</a></p>
+                <p><a href="certs/participants/Tomtom.png" target="_blank">Tomtom</a></p>
+                <p><a href="certs/participants/Faageg.png" target="_blank">Faageg</a></p>
+                <p><a href="certs/participants/Shouryu.png" target="_blank">Shouryu</a></p>
+                <p><a href="certs/participants/~~.png" target="_blank">~~</a></p>
+                <p><a href="certs/participants/Llucmenork.png" target="_blank">Llucmenork</a></p>
+                <p><a href="certs/participants/Misterr.png" target="_blank">Misterr</a></p>
+                <p><a href="certs/participants/Bratella.png" target="_blank">Bratella</a></p>
+                <p><a href="certs/participants/PonChixote.png" target="_blank">PonChixote</a></p>
+                <!-- rest of participants... -->
+            </div>
+        </div>
+    </div>
+
+    <div class="credits">
+        <img src="emotes/mari.jpg" height="500">
+        <p>Thank you for participating and finishing your games! <br>*chu* *chu* *chu* </p>
+    </div>
+
+
+    <div class="credits">
+        <h2>Grinches</h2>
+        <p><a href="certs/grinch/Fire.png" target="_blank">Fire</a></p>
+        <p><a href="certs/grinch/Stafy.png" target="_blank">Stafy</a></p>
+        <p><a href="certs/grinch/Minoriko.png" target="_blank">Minoriko</a></p>
+        <p><a href="certs/grinch/Yumemii.png" target="_blank">Yumemii</a></p>
+        <p><a href="certs/grinch/vowels109.png" target="_blank">vowels109</a></p>
+        <p><a href="certs/grinch/bakasenpai.png" target="_blank">bakasenpai</a></p>
+        <p><a href="certs/grinch/dumbanon.png" target="_blank">dumbanon</a></p>
+
+    </div>
+
+    <div class="credits">
+        <img src="emotes/marimad.png" height="150">
+        <p>You grinched. Hmmp. <br> Also, if you didn't even play one game, I wouldn't know who you are.</p>
+    </div>
+
+    <div class="credits">
+        <h2>Streamers</h2>
+        <p>nyagger</p>
+        <p>guano</p>
+        <p>teach</p>
+        <p>Nullprophet</p>
+        <p>bulkvanderhuge</p>
+        <p>kingdomfreak</p>
+        <p>And everyone else I forgot!</p>
+    </div>
+
+    <div class="credits">
+        <h2>Commentators</h2>
+        <p>nyagger</p>
+        <p>guano</p>
+        <p>teach</p>
+        <p>Nullprophet</p>
+        <p>bulkvanderhuge</p>
+        <p>kingdomfreak</p>
+        <p>betty</p>
+        <p>conor12</p>
+        <p>GG</p>
+        <p>chise</p>
+        <p>Blackyknight</p>
+        <p>riggens</p>
+        <p>And everyone else I forgot!</p><br>
+        <small>(if you streamed, you also commentated!)</small><br>
+        <small>(certificates next year! fr fr!)</small>
+    </div>
+
+    <div class="credits">
+        <h2>Resources used in this tourney</h2>
+        <p><a href="https://monogatari.io/" target="_blank">Monogatari</a><br><small>VN Engine</small></p>
+        <p><a href="https://nagumorizu.studio.site/" target="_blank">nagumorizu</a><br><small>Free BGM</small></p>
+        <p>AnimeGen (look it up yourself) <br><small>sprites</small></p>
+        <p><a href="https://huggingface.co/spaces/skytnt/moe-tts" target="_blank">Moe tts</a><br><small>Text-to-speech</small></p>
+    </div>
+
+    <div class="credits">
+        <h2>Youtube Playlist</h2>
+        <p><a href="https://www.youtube.com/playlist?list=PLsNQErkXDPrznhgnLc87t8plRQ7C1tWiQ" target="_blank">Regular Tourney 3 Playlist</a><br><small>VODs, News, tourney things</small></p>
+    </div>
+
+    <div class="credits" style="margin: 100vh 0;">
+        <img src="emotes/emi.png" height="400" alt="">
+        <h2 class="vt323-regular">Thank you very much for being part of the Third Regular Tourney!</h2>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="credits" style="margin: 40vh 0;">
+        <h1>Regular Tourney Loop 2</h1>
+        <h2>June 2024</h2>
+    </div>
+
+    
+
+    
+
+</div>
+    
+
+<script>
+    $(document).ready(function() {
+        var hasScrolled = false;
+
+        $(window).scroll(function() {
+            if (!hasScrolled) {
+                try {
+                    $('#backgroundMusic')[0].play().then(() => {
+                        console.log("Playback initiated.");
+                    }).catch((error) => {
+                        $('#musicModal').show();
+                    });
+                } catch(e) {
+                    $('#musicModal').show();
+                }
+                hasScrolled = true;
+            }
+        });
+
+        $('#playMusic').click(function() {
+            $('#backgroundMusic')[0].play();
+            $('#musicModal').hide();
+        });
+
+        $('#denyMusic').click(function() {
+            $('#musicModal').hide();
+        });
+    });
+</script>
+
 </body>
 </html>
-<!-- 
-	errorrrrrr parrrssing messaggggeeee
-	33lfxav54xqjhq0whtub9l3mc6egvooa3uq0b68sm7j6jbsb3xpah05cx55s6mrxh9tualhw51got30lc2v42uul9x0usy71cbv58ks90wv3p07mrebyp15bjkrglvscrla55b9zez2j8up3e6pjakd5j1dfz00n6k8sz6wew7gzxwfi5658tbloyhlvjl7fc73kw4350rh93vmgk2jxshiazek076va12xybjra6muccx9dhvlpz830vu201s3i2e5ugvf3l618bwmnbq5vgge9ss8vpdz4jks2w7n834rjikxtpvqm6n33bl1cn9nv3ovggreagib19osm0ew9yfxg4c28p63znhgv2lhspee5bz7lo3gfuyyynxbjmse62gqkxjdtnhegsw9tw7p5vabsax11newuvs4g9kf6y0rg41fec095nkp72hbxcnypbvukhk6umya5lrttepbn81ijoa1fufzqo7bx6m3hktj2xjv8ubfpn9ygfqn0ly54a4rfszz3j7d8373zwaaco69p4ax3xcv3v4jsmt1lm1n3g54295ho7f9ybj8g718p7bsrhmobvcggould3a7jonwco3mz3tavzonu2t83easn6zxjnw3mr9spqzb7k76i695px6v97481i37kq8ita67un72fxyvacjdnff3kp8v9i4jszunljyuzvs09gqwzxr8568bh5hfnwh107b3vzw28qu8cr94m8nghgrb3g7s5ap1bm45o63b2lfgfiwaca66aprsn5atp3z8n2ynxsktdf1k59452ap002eyaxko89c9kanwmzxswg40rt1azsnoyv1j96d40eygl99kzfys8ereurl83oyxe6w1h7pconitog7odnagv0lap0onu8wqleqp2vz94mefaoeoleqdpexy41ec7v0ptwpwkmdzpxpu1myu21920djqi8fcnkt6c814je1a0wdv3nqix1h2x2w7lt6x9ugk6cma0ywkre10zqdtpss0p37toqdtf2h3naee30ncl3n2zmob5b890p8icbqq0atn95babgnn6e2cnbdjrfpih2d1onm6lg9cqq8isccvayyhzcjotjstajvgusst0vh7sswuoxingkylmdn6btats1yilb47v0ebn0vn0c16l44287ub0q6rzgl5cdkxym77z9hzwrn9vigmmvno4uwy5tfbnnrlg4u0u171ajs8mi51bdpashznzfz3d3s20xiclk4f0qf5r3kz6cdbk0cppwn4sotc0kcqnrxenfglrxwphnxybev9cnan78fp6ldm09kro5qiuoyxy9q91n3ou0q28ucbad1hxehk0w9rabk6mvs9atabj7zge579b95m8wut5fnt4mnakgfbbrmi2t6e8bkcnixl4cn6ef77xw802fas5m2ib3frv01c2c82xbdombrk9fdxwrrmoz3jovl9g6bogtmlz64quiaqlrma9vki7eh7ju7h7nintmdzp0j2uhl2oydr53ykg5pi71hujkf8ow5c7lwjmum6vkq9ybrlkp3y8283d02y6icqflim8sqkd4sjvx8j25x5vdz3fxd7e8o29ecb7r76bnvmjy6aq8kryvw175ikshj70vkdwv97jzs2tx5ry1ur3vg4yphfwbk6ch0q9pbf20fgvyi19elc6geb5qm7n7o273y6zzriy73vcikluq45eyr903ijdyifev2mpp1wud7x5fht6nhxsueg0p63ze57cwznelo6y22czmplk2l0wk1fx6webrr1pm1hojtof1380msmf3x6jrffkt2i3gx3covshdkq2xf185xr5q7h1lt5knuzr1ddc3igudcsm5mk1rb5mt5f18uunr8h5l8jb0so1qsh55k4nhsswcwzjyxuvi8h3v4h18rdoyc8dd112j9x7k4ff7ao0lbx1auosi2y75qt4ltb3fka3dkd3b2jz6046orf16lc6wtyvrwr0oekb9wz6tlh29hn82ugz41uappt4vwrxsujjraqzvi68a8dtvtniv8okun2pfjw5urrwdxluqcj1r1sjsuc0vuogjt4pel6vv6jr14es9wdd6sgx19qqlmxqqxss11geupq7wk8sqpze85m0gfwt6qh5n2i3fcipl1h86km0jqk4afq027wpjqm3n0nm75ecbxg0i47ye36ac69a2zfi8lq39p3ostsp1e9acm9ry7ioulb9dlcp2t9rathalkbughm855oaumd4lpvvuhrw7wme7tcu1fp57pdjohldfjewtnr3kqadyp1ew3ic6szwbskg0arr6rf52kags1e2m4hss0n9pudnc0cswvd9q6qlricj9svw2whyp8ioi5gb3z269ucu6ewy19hc7cblkjes5ppxbbvl885ek7ibl0oc31z73pzli8apmeaiu79edhpb68w7zg3dyp6b01a7pupail3ts02qdummey92ne5cdfm0v7un7a2rljix824ic3wehvmh6udwukcfqdhtiusb8jdx6w1472i2eedrf6idqbr9jvsdb5nij5tifev0o71skbti8c24rbtop36d7gje1j1pevjooqzwboqw4yqkbuzxnas41o6rx7ojtkhsd5zxgd2ak6aihnumxwao55v9uepdy8nhfqntc0bopp32icl6z91cdbmnaw984uh7de9fx7jqmqjhxtiabnojw1pzoin6uh8s9o4hq0525q4vji11hs9ov2v2hpu7b1te2hl2vr59g09gt93j0j25n277t8onqas4lapyc8375n640bqhquh9tkwkzh629vikz28ewk5735ef4p0tpzcow7bypb6b0l240tv0fpw50mfpb5ve78mbzdzbrjl5swnyiq8jyuwokat40vwpm0e2b626gq9fvcccr5yllgkyhq0p19a38p34rz6e0o4aw5px9h9vdwjbt4wsc6om29y1e58glspkxx3gy6m5udqgai0afdkrr3ikunzexrp5xnn2o06dddhejmcyox6vt4bhls66tkpqyydf06tvjz08fbbqf1t2yhfkygns8osyyq0y2czn19k2n7j2fuu9zskw1ur6t99pvpnk88u2mjt01v0mybpdide96ip8wktauhn0to2xk5g8h4fuz4ehbzpluckww5r14rfeorxsaimnrtjc67gpy10kam5i2e3f7py9zt4w7oxa4ly28k55ffvzcc507x62ittx80avfn
-	w4s2v29p346
- -->
